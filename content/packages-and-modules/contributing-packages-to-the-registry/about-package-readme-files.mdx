@@ -1,37 +1,69 @@
+If you want to directly view the demo, you can scroll down to the link video.
+
+AI-Powered Chat Library
+---------------------------------------------------
+
+This library allows you to integrate an AI-powered chat component into your React application. The chat component uses the OpenAI API to generate intelligent responses based on user input.
+
+Installation
+---------------------------------------------------
+
+To use the AI-powered chat library in your React application, you need to follow these steps:
+
+Install the required dependencies using npm or yarn:
+npm install rca-react-chatai
+
+#Import the Chat component from the library into your React application
+import ChatLibrary from "rca-react-chatai";
+
+#USAGE
+--------------------------------------------------------
+
+Once you have imported the ChatLibrary component, you can use it in your application as follows:
+
+Copy code:
+---------
+link:
 ---
-title: About package README files
----
+https://docs.google.com/document/d/1G1LjGyFXPMajqF8jrWC1nMLjcHixHqzgEK-sXkEfbzw/edit?usp=sharing
 
-To help others find your packages on npm and have a good experience using your code in their projects, we recommend including a README file in your package directory. Your README file may include directions for installing, configuring, and using the code in your package, as well as any other information a user may find helpful. The README file will be shown on the package page.
+!!! WARNING !!!
+-------------------------------
+This library only works with vite projects (npx create-vite@latest your_project). If you use create react app it won’t work. WE EXCUSE OURSELVES FOR THE INCONVENIENCE AND WE WILL WORK ON IT BECAUSE IT IS STILL IN DEVELOPMENT
 
-An npm package README file must be in the root-level directory of the package.
+#Custom Styling
+----------------------------------
 
-## Creating and adding a README.md file to a package
+The chat component comes with default styling, but you can customize it to match your application's design. To do this, you can override the CSS classes provided by the library.
 
-1. In a text editor, in your package root directory, create a file called `README.md`.
-2. In the `README.md` file, add useful information about your package.
-3. Save the `README.md` file.
+For example, to change the input and button styles, you can add your own CSS:
 
-<Note>
+css
+/* custom.css / .response_container { / modify the styles of the response container ( the container that has the response )*/ }
 
-**Note:** The file extension `.md` indicates a Markdown file. For more information about Markdown, see the GitHub Guide "<a href="https://guides.github.com/features/mastering-markdown/#what">Mastering Markdown</a>".
+div { /* you can modify the styles of the div that holds them all */ }
 
-</Note>
+Then, import your custom CSS in your React application:
+import React from "react"; import ChatLibrary from "rca-react-chatai"; import "./custom.css"; // Import your custom styles
 
-## Updating an existing package README file
+The chat component will now use your custom styles for the input and button.
 
-The README file will only be updated on the package page when you publish a new version of your package. To update your README file:
+#Real-World Use Cases
+--------------------------------------
 
-1. In a text editor, update the contents of the `README.md` file.
+The AI-powered chat library can be used for various real-world applications, including:
 
-2. Save the `README.md` file.
+Customer Support Chatbots, Language Translation Services, Content Generation, Question Answering Systems, Chat-based Interfaces ...
 
-3. On the command line, in the package root directory, run the following commands:
-
-   ```
-   npm version patch
-   npm publish
-   ```
+The above package provides a simple and reusable React component called ChatLibrary that enables users to implement the functionality of ChatGPT in their own projects. This component allows users to create a chat interface where they can interact with the ChatGPT model by asking questions or providing prompts.
 
 
-[markdown-link]: https://guides.github.com/features/mastering-markdown/#what
+#Contributions
+----------------------------------------------------------
+
+As it is still being improved day by day , it came from being 50 lines of code to copy to 26 lines of code to copy. If you find any issues with the library or have suggestions for improvements, feel free to contribute by opening an issue or submitting a pull request on the GitHub repository. Or furthermore you can talk with me on my linkedIN account
+
+#YOUTUBE LIVE PACKAGE DEMO LINK
+-------------------------------------------------
+
+https://youtu.be/cYTcD_RqQwE
